@@ -1,11 +1,47 @@
 ## Docker commands used to build the application 
-# TODO: insert the docker build command
+docker build -t dinhtin12/techtrends:latest  . 
 
 ## Docker commands used to run the application
-# TODO: insert the docker run command
+docker run -d -p 7111:3111 dinhtin12/techtrends
 
 ## Docker commands used to get the application logs
-# TODO: insert the docker logs command
+docker logs 9dd4dae721af
+
+# 9dd4dae721af is container id
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+PS C:\Users\Dinh Tin\Desktop\udacity\native\project1\src\nd064_course_1\project> docker logs 98b53c515adf
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+172.17.0.1 - - [21/Sep/2022 13:25:33] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:25:33] "GET /static/css/main.css HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:25:33] "GET /favicon.ico HTTP/1.1" 404 -
+172.17.0.1 - - [21/Sep/2022 13:27:54] "GET /create HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:27:54] "GET /static/css/main.css HTTP/1.1" 304 -
+WARNING:root:Article "test" is created!
+172.17.0.1 - - [21/Sep/2022 13:27:57] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:27:57] "POST /create HTTP/1.1" 302 -
+172.17.0.1 - - [21/Sep/2022 13:27:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:27:57] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:27:57] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:27:57] "GET /static/css/main.css HTTP/1.1" 304 -
+WARNING:root:Article "2020 CNCF Annual Report" retrieved!
+172.17.0.1 - - [21/Sep/2022 13:27:58] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:27:58] "GET /1 HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:27:58] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:27:58] "GET /static/css/main.css HTTP/1.1" 304 -
+WARNING:root:The "About Us" page is retrieved.
+172.17.0.1 - - [21/Sep/2022 13:28:06] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:28:06] "GET /about HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:28:06] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:28:06] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [21/Sep/2022 13:28:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:28:07] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [21/Sep/2022 13:28:07] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [21/Sep/2022 13:28:07] "GET /static/css/main.css HTTP/1.1" 304 -
